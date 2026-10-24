@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #ACBFA4;
+    text-decoration: solid;
+    font: italic;
+    font-size: 8vmin;
+}
+body{
+    background-color: #331E38;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex; /* sab kuch ek line me aajayega */
+    flex-wrap: wrap; /* matlab jagha nahi hai toh next line me adjust hojao*/
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin ;
+    width: 60vmin;
+    display: flex; /* sab kuch ek line me aajayega */
+    flex-wrap: wrap; /* matlab jagha nahi hai toh next line me adjust hojao*/
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin; /* ek gap maintain karne ke liye gap ka use karenge */
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #F4E8C1;
+    background-color:#8C4843;
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:#A0C1B9;
+    color: #331E38;
+    border-radius: 1rem;
+    border: none;
+
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color:#A0C1B9;
+    color: #331E38;
+    border-radius: 1rem;
+    border: none;
+}
+#message{
+    color:#ACBFA4;
+    font-size: 5vmin;
+
+} 
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+.hide{
+    display: none;
+}
