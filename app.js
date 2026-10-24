@@ -17,6 +17,7 @@ let count = 0; //the number of moves
  ];
 const resetGame = () => {
     turnO = true;
+    count=0;
     enableBoxes();
     msgContainer.classList.add("hide");
 }
@@ -64,10 +65,11 @@ const showWinner = (Winner) => {
         if (pos1Val != "" && pos2Val != "" && pos3Val != ""){
             if(pos1Val === pos2Val && pos2Val === pos3Val){
                 showWinner(pos1Val);
-                return;
+                return;// stop if winner is found
             }
         }
     }
+    //draw condition
     if (count === 9) {
     msg.innerText = "It's a Draw!";
     msgContainer.classList.remove("hide");
